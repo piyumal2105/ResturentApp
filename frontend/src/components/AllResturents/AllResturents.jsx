@@ -62,11 +62,11 @@ const AllResturents = () => {
               <Row xs={1} md={3} className="g-4" style={{ padding: "20px" }}>
                 {filteredData.map((member) => (
                   <Col key={member.cusMemberID}>
-                    <Card style={{ width: "18rem", textAlign: "left" }}>
-                      <Card.Img variant="top" src={member.image} />
+                    <Card style={{ width: "22rem", textAlign: "left" }}>
+                      <Card.Img variant="top" src={member.image} style={{height: "200px"}}/>
                       <Card.Body>
                         <Card.Title>{member.name}</Card.Title>
-                        <Card.Text>{member.address}</Card.Text>
+                        <Card.Text> {member.address}</Card.Text>
                         <Card.Text>{member.telephone}</Card.Text>
                       </Card.Body>
                     </Card>
