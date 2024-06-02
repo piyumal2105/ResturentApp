@@ -45,7 +45,7 @@ function AdminLogin() {
           localStorage.setItem("admin", JSON.stringify(user.data.admin));
 
           // navigate to the /requested
-          navigate("/advertise");
+          navigate("/resturents");
         })
         .catch((error) => {
           console.log(error.response.data.message);
